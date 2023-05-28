@@ -1,0 +1,16 @@
+#Worklog example
+        
+    
+"worklogs": [
+{
+"author": "abcde-12345-fedcba",
+"comment": "Worklog",
+"startDate": "2012-08-31T17:59:02.161+0100",
+"timeSpent": "PT1M"
+},
+{
+"author": "abcde-12345-fedcba",
+"startDate": "2012-08-31T17:59:02.161+0100",
+"timeSpent": "PT3H"
+}
+]
