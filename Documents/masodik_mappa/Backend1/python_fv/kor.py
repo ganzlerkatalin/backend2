@@ -1,16 +1,17 @@
 #Python függvények 4.Feladat - Kör kerület és terület számítás
 from math import pi
 
-#def kerulet(szam)
- #  # kerulet = 2 * db * pi
- #   return 2 * db * pi
+def kor_kerulet(radius):
+   return 2*radius*pi
 
-szam = input('Kérem a kör sugarát!')
-r = int(szam)
+def kor_terulet(radius):
+    return radius * radius * pi
 
-kerulet = 2*r*pi
-terulet = r*r*pi
+r = int(input('Kérem a kör sugarát!'))
 
-print("Kör kerülete: ",kerulet)
-print("Kör területe: ",terulet)
+kerulet = kor_kerulet(r)
+terulet = kor_terulet(r)
+
+print(f'Kör kerülete: {kerulet}')
+print(f'Kör területe: {terulet}')
 
