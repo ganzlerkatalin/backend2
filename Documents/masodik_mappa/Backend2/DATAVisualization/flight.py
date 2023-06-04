@@ -3,7 +3,7 @@ import pandas as pd
 
 def main():
     
-    flights = pd.read_csv("C:\Users\win10\Documents\masodik_mappa\Backend2\DATAVisualization\flight.csv")
+    flights = pd.read_csv("C:\\Users\\win10\\Documents\\masodik_mappa\\Backend2\\DATAVisualization\\flight.csv")
     flights["year"] = np.floor(flights.time).astype(int)
     flights["month"] = np.round((flights.time - flights.year) * 12).astype(int)
 
