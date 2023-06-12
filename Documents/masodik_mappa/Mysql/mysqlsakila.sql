@@ -17,7 +17,7 @@ select last_name, count(last_name) from user group by last_name;
 select * from country;
 select country_id, country from country where country like "%China%" or country like "%Afghanistan%" or country like "%Israel%";
 -- 6. Mennyi az átlagos hossza egy filmnek?
-
+select sum(length)/count(film_id) from film;
 -- 7. Jelenítsd meg az összes személyzet nevét és címét.
 
 -- 8. Jelenitsd meg az összes vevő nevét és a hozzájuk tartozó összegeket amiket fizettek (payment amount)- első 10, limit 10
