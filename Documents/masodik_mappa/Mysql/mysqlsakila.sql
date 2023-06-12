@@ -23,3 +23,6 @@ select last_name, first_name,address, address2, district,city, country, postal_c
 -- 8. Jelenitsd meg az összes vevő nevét és a hozzájuk tartozó összegeket amiket fizettek (payment amount)- első 10, limit 10
 select payment_id, first_name, last_name, amount from payment, customer where payment.customer_id=customer.customer_id limit 10;
 -- 9. Jelenítsd meg az összes film címét és a benne szereplő színészek neveit. első 20-limit 20
+select film_id, title from film;
+select actor_id, film_id from film_actor;
+select title,first_name, last_name from actor, film_actor,film where film_actor.actor_id=actor.actor_id and film.film_id=film_actor.film_id limit 20;
