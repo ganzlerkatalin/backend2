@@ -1,4 +1,4 @@
-use user;
+use sakila;
 -- 1.feladat Összes színész vezetékneve és keresztneve
 select first_name, last_name from actor;
 -- 2.a Összes színész teljes neve csupa nagybetűvel egyetlen oszlopban , oszlopneve "Actor Name"
@@ -14,7 +14,8 @@ select distinct last_name from actor;
 -- 4. Melyik vezetéknév szerepel több mint egyszer?
 select last_name, count(last_name) from user group by last_name; 
 -- 5. Jelenítsd meg az összes ország ID-t, és ország nevet, amelyik Kína,Afganisztán vagy Izrael.
-
+select * from country;
+select country_id, country from country where country like "%China%" or country like "%Afghanistan%" or country like "%Israel%";
 -- 6. Mennyi az átlagos hossza egy filmnek?
 
 -- 7. Jelenítsd meg az összes személyzet nevét és címét.
