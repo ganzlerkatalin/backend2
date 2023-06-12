@@ -19,7 +19,7 @@ select country_id, country from country where country like "%China%" or country 
 -- 6. Mennyi az átlagos hossza egy filmnek?
 select sum(length)/count(film_id) from film;
 -- 7. Jelenítsd meg az összes személyzet nevét és címét.
-
+select last_name, first_name,address, address2, district,city, country, postal_code from staff, address, city, country where staff.address_id=address.address_id and address.city_id= city.city_id and city.country_id = country.country_id ;
 -- 8. Jelenitsd meg az összes vevő nevét és a hozzájuk tartozó összegeket amiket fizettek (payment amount)- első 10, limit 10
 
 -- 9. Jelenítsd meg az összes film címét és a benne szereplő színészek neveit. első 20-limit 20
